@@ -22,5 +22,7 @@
         // For Stylelint
         "source.fixAll.stylelint": true
     },
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.scrollToSwitchTabs": true
 }
