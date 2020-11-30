@@ -8,7 +8,8 @@ Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 Install-Module -Name PSReadLine -Scope CurrentUser -RequiredVersion 2.0.2
 Install-Module -Name DockerCompletion -Scope CurrentUser
-Install-Module WslInterop
+Install-Module -Name PSKubectlCompletion -Scope CurrentUser
+Install-Module WslInterop -Scope CurrentUser
 
 # Set PSGallery as Untrusted Repo
 Write-Output "Setting PSGallery as Untrusted Repo"

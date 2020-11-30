@@ -1,6 +1,7 @@
 Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module DockerCompletion
+Import-Module PSKubectlCompletion
 Set-Theme Kunal_Agnoster
 
 # Shows navigable menu of all options when hitting Tab

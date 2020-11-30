@@ -1,7 +1,8 @@
 {
     "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.cursorStyle": "line",
     "editor.suggestSelection": "first",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "editor.wordWrap": "on",
     "editor.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
