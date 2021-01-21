@@ -11,4 +11,4 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
-Import-WslCommand "apt", "awk", "emacs", "grep", "head", "less", "ls", "man", "sed", "seq", "ssh", "sudo", "tail", "vim", "watch"
+Import-WslCommand "apt", "awk", "emacs", "grep", "head", "less", "man", "sed", "seq", "ssh", "sudo", "tail", "vim", "watch"
