@@ -1,0 +1,47 @@
+{
+    "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+    "CreationDate": "2021-07-06T15:44:45.097-00:00",
+    "Sources": [
+        {
+            "Packages": [
+                {
+                    "PackageIdentifier": "JetBrains.IntelliJIDEA.Community"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.WindowsTerminal"
+                },
+                {
+                    "PackageIdentifier": "Postman.Postman"
+                },
+                {
+                    "PackageIdentifier": "Daum.PotPlayer"
+                },
+                {
+                    "PackageIdentifier": "OpenJS.NodeJSLTS"
+                },
+                {
+                    "PackageIdentifier": "Python.Python.3"
+                },
+                {
+                    "PackageIdentifier": "7zip.7zip"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.PowerShell"
+                },
+                {
+                    "PackageIdentifier": "AdoptOpenJDK.OpenJDK.11"
+                },
+                {
+                    "PackageIdentifier": "Google.Chrome"
+                }
+            ],
+            "SourceDetails": {
+                "Argument": "https://winget.azureedge.net/cache",
+                "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name": "winget",
+                "Type": "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion": "1.0.11692"
+}
