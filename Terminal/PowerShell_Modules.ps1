@@ -6,9 +6,10 @@ Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 echo "Installing Modules"
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
-Install-Module -Name PSReadLine -Scope CurrentUser -RequiredVersion 2.0.2
+Install-Module -Name PSReadLine -Scope CurrentUser
 Install-Module -Name DockerCompletion -Scope CurrentUser
 Install-Module -Name PSKubectlCompletion -Scope CurrentUser
+Install-Module -Name Terminal-Icons -Scope CurrentUser
 
 # Set PSGallery as Untrusted Repo
 echo "Setting PSGallery as Untrusted Repo"
