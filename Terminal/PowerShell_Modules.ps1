@@ -1,3 +1,6 @@
+# Install Oh My Posh
+winget install JanDeDobbeleer.OhMyPosh -s winget
+
 # Set PSGallery as Trusted Repo
 echo "Setting PSGallery as Trusted Repo"
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted 
@@ -5,7 +8,6 @@ Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 # Install Modules
 echo "Installing Modules"
 Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
 Install-Module -Name PSReadLine -Scope CurrentUser
 Install-Module -Name DockerCompletion -Scope CurrentUser
 Install-Module -Name PSKubectlCompletion -Scope CurrentUser

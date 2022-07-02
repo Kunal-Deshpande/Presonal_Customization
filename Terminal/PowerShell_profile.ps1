@@ -1,9 +1,9 @@
-Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module DockerCompletion
 Import-Module PSKubectlCompletion
 Import-Module Terminal-Icons
-Set-PoshPrompt -Theme $HOME\Documents\PowerShell\PoshThemes\kunal.omp.json
+
+oh-my-posh init pwsh --config "~\Documents\PowerShell\PoshThemes\kunal.omp.json" | Invoke-Expression
 
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
