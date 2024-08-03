@@ -1,0 +1,60 @@
+format = """
+[](#61AFEF)\
+$username\
+$hostname\
+[](fg:#61AFEF bg:#C678DD)\
+$directory\
+[](fg:#C678DD bg:#95FFA4)\
+$git_branch\
+$git_status\
+[](fg:#95FFA4)\
+$fill\
+$cmd_duration\
+$line_break\
+$character"""
+
+[username]
+style_user = "fg:#193549 bg:#61AFEF"
+style_root = "fg:#193549 bg:#61AFEF"
+format = "[$user@]($style)"
+
+[hostname]
+style = "fg:#193549 bg:#61AFEF"
+format = "[$ssh_symbol$hostname]($style)"
+
+[directory]
+style = "fg:#FFFFFF bg:#C678DD"
+format = "[ $path ]($style)"
+
+[git_branch]
+style = "fg:#193549 bg:#95FFA4"
+symbol = ''
+format = '[ $symbol $branch(:$remote_branch) ]($style)'
+
+[git_status]
+style = "fg:#193549 bg:#95FFA4"
+format = '[$all_status$ahead_behind ]($style)'
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+format = "[$duration]($style)"
+
+[character]
+success_symbol = "[❯](blue)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
+
+

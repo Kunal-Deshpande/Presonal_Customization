@@ -1,6 +1,7 @@
-oh-my-posh init pwsh --config "~\Documents\PowerShell\PoshThemes\kunal.omp.json" | Invoke-Expression
+Invoke-Expression (&starship init powershell)
 
-Import-Module posh-git
+$ENV:STARSHIP_CONFIG = "$HOME/.starship/themes/kunal_starship.toml"
+
 Import-Module DockerCompletion
 Import-Module PSKubectlCompletion
 Import-Module Terminal-Icons

@@ -1,5 +1,5 @@
-# Install Oh My Posh
-winget install JanDeDobbeleer.OhMyPosh -s winget
+# Install Starship
+winget install starship
 
 # Set PSGallery as Trusted Repo
 echo "Setting PSGallery as Trusted Repo"
@@ -7,8 +7,6 @@ Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
 # Install Modules
 echo "Installing Modules"
-Install-Module posh-git -Scope CurrentUser
-Install-Module -Name PSReadLine -Scope CurrentUser
 Install-Module -Name DockerCompletion -Scope CurrentUser
 Install-Module -Name PSKubectlCompletion -Scope CurrentUser
 Install-Module -Name Terminal-Icons -Scope CurrentUser
@@ -17,13 +15,13 @@ Install-Module -Name Terminal-Icons -Scope CurrentUser
 echo "Setting PSGallery as Untrusted Repo"
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Untrusted
 
-# Copy file kunal.omp.json to ~\Documents\WindowsPowerShell\PoshThemes
-echo "Copy file kunal.omp.json to ~\Documents\PowerShell\PoshThemes"
-$powerShellPath = "$HOME\Documents\PowerShell\PoshThemes"
-if(!(Test-Path $powerShellPath)) {
-    mkdir $powerShellPath
+# Copy file kunal_starship.toml to ~/.starship/themes/
+echo "Copy file kunal_starship.toml to ~/.starship/themes/"
+$starshipThemePath = "~/.starship/themes/"
+if(!(Test-Path $starshipThemePath)) {
+    mkdir $starshipThemePath
 }
-cp ./kunal.omp.json $powerShellPath\kunal.omp.json
+cp ./kunal_starship.toml $starshipThemePath/kunal_starship.toml
 
 # Initialize PowerShell
 echo "Copy contents of powershell_profile.ps1 to $profile"
