@@ -15,9 +15,9 @@ Install-Module -Name Terminal-Icons -Scope CurrentUser
 echo "Setting PSGallery as Untrusted Repo"
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Untrusted
 
-# Copy file kunal_starship.toml to ~/.starship/themes/
-echo "Copy file kunal_starship.toml to ~/.starship/themes/"
-$starshipThemePath = "~/.starship/themes/"
+# Copy file kunal_starship.toml to ~/Documents/PowerShell/StarshipThemes
+echo "Copy file kunal_starship.toml to ~/Documents/PowerShell/StarshipThemes"
+$starshipThemePath = "$HOME/Documents/PowerShell/StarshipThemes"
 if(!(Test-Path $starshipThemePath)) {
     mkdir $starshipThemePath
 }

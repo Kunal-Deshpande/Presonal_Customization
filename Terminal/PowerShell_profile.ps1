@@ -1,6 +1,6 @@
 Invoke-Expression (&starship init powershell)
 
-$ENV:STARSHIP_CONFIG = "$HOME/.starship/themes/kunal_starship.toml"
+$ENV:STARSHIP_CONFIG = "$HOME/Documents/PowerShell/StarshipThemes/kunal_starship.toml"
 
 Import-Module DockerCompletion
 Import-Module PSKubectlCompletion
